@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./App.css";
 import ChartComponent from "./ChartComponent";
 
 function App() {
@@ -55,11 +55,10 @@ function App() {
     }
   };
 
-  console.log(currentChart, current);
   const tp = currentChart?.type;
   if (!loading) {
     return (
-      <div>
+      <div style={{ textAlign: "center" }}>
         <ChartComponent
           type={tp === "Bar" ? "bar" : "pie"}
           chartData={chartData}
@@ -67,12 +66,17 @@ function App() {
         />
 
         <button
+          className="Prvbutton"
           onClick={hanldePrevious}
           disabled={current === 0 ? true : false}
         >
           Last
         </button>
-        <button onClick={hanldeNext} disabled={current === max ? true : false}>
+        <button
+          className="Nxtbutton"
+          onClick={hanldeNext}
+          disabled={current === max ? true : false}
+        >
           Next
         </button>
       </div>

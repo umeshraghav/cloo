@@ -1,0 +1,45 @@
+.Nxtbutton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 5rem;
+  transition-duration: 0.4s;
+}
+.Prvbutton {
+  background-color: #bd3b1b;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5rem;
+  border-radius: 5px;
+}
+.Nxtbutton:hover {
+  background-color: #13a72b;
+  color: white;
+}
+.Prvbutton:hover {
+  background-color: #ed603f;
+  color: white;
+}
+button:disabled,
+button[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed !important;
+}
+
+button:disabled,
+button[disabled]:hover {
+  background-color: #cccccc;
+  cursor: not-allowed !important;
+}
